@@ -1,0 +1,46 @@
+<!--login.wxml-->
+<view class="container register">
+  <view wx:if="{{step == 1}}">
+		<view class="welcome">Register</view>
+		<view>Create an account</view>
+		
+		<view style="margin: 40rpx 0">
+			<view class="form-title">Email</view>
+			<view class="input">
+				<van-field left-icon="envelop-o" placeholder="Ex: abc@example.com"></van-field>
+			</view>
+		</view>
+		<view style="margin: 40rpx 0">
+			<view class="form-title">Your Name</view>
+			<view class="input">
+				<van-field left-icon="contact-o" placeholder="Ex. Saul Ramirez"></van-field>
+			</view>
+		</view>
+		<view style="margin: 40rpx 0">
+			<view class="form-title">Your Password</view>
+			<view class="input">
+				<van-field left-icon="lock" type="password"></van-field>
+			</view>
+		</view>
+		<button bindtap="goNext" class="btn" plain="true" style="margin-top: 20rpx;background: #575DFB;color: #FFF;">
+			<view>Register</view>
+		</button>
+		<view style="text-align: center;margin-top: 45rpx;">
+			<block> Already have an account? </block>
+			<text class="logintext" bindtap="goLogin"> Login </text>
+		</view>
+	</view>
+	<view wx:if="{{step == 2}}">
+		<view class="welcome">Register</view>
+		<view>We have sent an email to your email account with a verification code!</view>
+		<view style="margin: 40rpx 0">
+			<view class="form-title">Verification Code</view>
+			<view class="input">
+				<van-field placeholder="EX: 123456"></van-field>
+			</view>
+		</view>
+		<button bindtap="goLogin" class="btn" plain="true" style="margin-top: 20rpx;background: #575DFB;color: #FFF;">
+			<view>Register</view>
+		</button>
+	</view>
+</view>

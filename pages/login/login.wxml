@@ -1,0 +1,18 @@
+<!--login.wxml-->
+<view class="container login">
+  <view>
+		<view class="welcome">Login</view>
+		<view>Login now to track all your expenses and income at a place!</view>
+		<button bindtap="Login" class="btn" plain="true" style="margin-top: 20rpx;background: #575DFB;color: #FFF;">
+			<view>Login</view>
+		</button>
+		<button class="btn" plain="true" style="margin-top: 60rpx;">
+			<van-image width="20" height="20" style="margin-top: 20rpx;" src="/public/wechat.svg" />
+			<view>continue with Wechat</view>
+		</button>
+		<view style="text-align: center;margin-top: 45rpx;">
+			<block> Don't have an account? </block>
+			<text class="logintext" bindtap="goRes"> Register </text>
+		</view>
+	</view>
+</view>

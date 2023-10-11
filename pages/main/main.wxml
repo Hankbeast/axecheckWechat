@@ -1,0 +1,19 @@
+<!--login.wxml-->
+<view class="container login">
+  <view>
+		<view class="welcome">Welcome</view>
+		<view>Axe Inspection</view>
+		<button class="btn" plain="true" style="margin-top: 60rpx;">
+			<van-image width="20" height="20" style="margin-top: 20rpx;" src="/public/wechat.svg" />
+			<view>continue with Wechat</view>
+		</button>
+		<button bindtap="goRes" class="btn" plain="true" style="margin-top: 20rpx;">
+			<van-image width="20" height="20" style="margin-top: 20rpx;" src="/public/at.svg" />
+			<view>continue with Email</view>
+		</button>
+		<view style="text-align: center;margin-top: 45rpx;">
+			<block> Already have an account? </block>
+			<text class="logintext"> Login </text>
+		</view>
+	</view>
+</view>

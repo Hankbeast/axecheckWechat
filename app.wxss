@@ -1,0 +1,33 @@
+/**app.wxss**/
+.container {
+	height: 100%;
+  padding: 66rpx;
+	
+	font-weight: 400;
+	color: #000;
+} 
+.btn {
+	height: 100rpx;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 700;
+	border-radius: 15.183px;
+	border: 1.423px solid #000;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 0 20%;
+}
+.input {
+	height: 100rpx;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 700;
+	border-radius: 15.183px;
+	border: 1.423px solid #000;
+
+	display: flex;
+	align-items: center;
+	padding: 0 2%;
+}

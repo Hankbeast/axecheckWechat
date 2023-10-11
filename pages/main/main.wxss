@@ -1,0 +1,13 @@
+.login {
+	padding-top: 33%;
+}
+.welcome {
+	font-size: 22px;
+}
+.logintext {
+	color: #575DFB;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 700;
+	text-decoration-line: underline;
+}

@@ -1,0 +1,16 @@
+.register {
+	padding-top: 10%;
+}
+.welcome {
+	font-size: 22px;
+	color: #575DFB;
+	font-size: 30px;
+	font-weight: 700;
+}
+.logintext {
+	color: #575DFB;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 700;
+	text-decoration-line: underline;
+}
