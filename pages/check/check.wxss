@@ -1,0 +1,24 @@
+/* pages/check/check.wxss */
+.check-container {
+	padding: 5% 20%;
+}
+.check-item {
+	text-align: center;
+	padding: 40rpx 60rpx;
+	border-radius: 15px;
+	border: 1px dashed #575DFB;
+	margin: 40rpx 0;
+}
+.check-title {
+	color: #000;
+	font-family: Alibaba PuHuiTi 3.0;
+	font-size: 24px;
+	font-weight: 600;
+}
+.sub-title {
+	color: #979797;
+	font-family: Alibaba PuHuiTi 3.0;
+	font-size: 15px;
+	font-weight: 400;
+	margin: 20rpx 0;
+}

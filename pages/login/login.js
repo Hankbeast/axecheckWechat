@@ -19,5 +19,10 @@ Page({
 		wx.navigateTo({
 			url: '../register/register',
 		})
+	},
+	logintomain() {
+		wx.navigateTo({
+			url: '../infomation/infomation',
+		})
 	}
 })

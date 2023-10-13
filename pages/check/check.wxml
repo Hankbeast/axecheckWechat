@@ -1,0 +1,113 @@
+<!--pages/check/check.wxml-->
+<view>
+	<view wx:if="{{step == 1}}">
+		<van-cell-group>
+			<van-field title-width="9em" size="large" label="ProductName" />
+			<van-field title-width="9em" size="large" label="P/O number" />
+			<van-field title-width="9em" size="large" label="Quantity" />
+			<van-field title-width="9em" size="large" label="Client name" />
+			<van-field title-width="9em" size="large" label="Supplier name" />
+			<van-field title-width="9em" size="large" label="Inspection date" />
+			<van-field title-width="9em" size="large" label="Inspection location" />
+			<van-field title-width="9em" size="large" label="Inspection Results" />
+		</van-cell-group>
+		<view style="padding: 0 10%;">
+			<button bindtap="nextStep" class="btn" plain="true" style="margin-top: 40rpx;background: #575DFB;color: #FFF;">
+				<view>Next</view>
+			</button>
+		</view>
+	</view>
+	<view class="check-container" wx:if="{{step == 2}}">
+		<view class="check-item">
+			<view class="check-title">1.工厂信息</view>
+			<view class="sub-title">工厂大门,门牌号和厂名,能照片展示的都拍进系统</view>
+			<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" deletable="{{ true }}" />
+		</view>
+		<view class="check-item">
+			<view class="check-title">2.BSCI</view>
+			<view class="sub-title">工厂在有效期内的BSCI报告需拍照并填写有效时间</view>
+			<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" deletable="{{ true }}" />
+		</view>
+		<view class="check-item">
+			<view class="check-title">3.仓库</view>
+			<view class="sub-title">工厂在有效期内的BSCI报告需拍照并填写有效时间</view>
+			<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" deletable="{{ true }}" />
+		</view>
+		<view class="check-item">
+			<view class="check-title">4.签样与色块</view>
+			<view class="sub-title">选填</view>
+			<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" deletable="{{ true }}" />
+		</view>
+		<view class="check-item">
+			<view class="check-title">5.唛头用装箱数</view>
+			<view class="sub-title">正常拍唛头, 条形码需扫描</view>
+			<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" deletable="{{ true }}" />
+		</view>
+		<view class="check-item">
+			<view class="check-title">6.外箱尺寸及毛重</view>
+			<view class="sub-title">注意核对尺寸超重超长给予顾客提示</view>
+			<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" deletable="{{ true }}" />
+		</view>
+		<view class="check-item">
+			<view class="check-title">7.外箱内型及包装方式</view>
+			<view class="sub-title">正常拍照.(外箱双瓦愣,工字型封箱,无钉箱)</view>
+			<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" deletable="{{ true }}" />
+		</view>
+		<view class="check-item">
+			<view class="check-title">8.内箱唛头用包装检查</view>
+			<view class="sub-title">尺寸不超过纸箱印刷尺寸0.5CM,毛重不超过标注的重量0.5KG</view>
+			<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" deletable="{{ true }}" />
+		</view>
+		<view class="check-item">
+			<view class="check-title">9.塑料袋与警告语</view>
+			<view class="sub-title">正常塑料袋开口大于12.5CM需有气孔和警告语</view>
+			<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" deletable="{{ true }}" />
+		</view>
+		<view class="check-item">
+			<view class="check-title">10.彩盒,吊卡,标签,安全标示,警告语</view>
+			<view class="sub-title">彩盒尺寸,毛净重,条形码扫描,展示盒同彩要求</view>
+			<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" deletable="{{ true }}" />
+		</view>
+		<view class="check-item">
+			<view class="check-title">11.产品配件照</view>
+			<view class="sub-title">有配件需拍进.</view>
+			<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" deletable="{{ true }}" />
+		</view>
+		<view class="check-item">
+			<view class="check-title">12.对照说明书组装</view>
+			<view class="sub-title">需组装的产品组装照片拍进系统</view>
+			<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" deletable="{{ true }}" />
+		</view>
+		<view class="check-item">
+			<view class="check-title">13.产品细节照</view>
+			<view class="sub-title">正常拍照</view>
+			<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" deletable="{{ true }}" />
+		</view>
+		<view class="check-item">
+			<view class="check-title">14.产品尺寸和重量</view>
+			<view class="sub-title">有尺寸和重量要求的需拍照,可参考系统里的订单信息里的规格参数.</view>
+			<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" deletable="{{ true }}" />
+		</view>
+		<view class="check-item">
+			<view class="check-title">15.产品质量检查并拍照</view>
+			<view class="sub-title">正常拍照</view>
+			<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" deletable="{{ true }}" />
+		</view>
+		<view class="check-item">
+			<view class="check-title">16.现场测试照</view>
+			<view class="sub-title">工厂有条件可以按不同的产品标准做下其它的测试</view>
+			<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" deletable="{{ true }}" />
+		</view>
+		<view class="check-item">
+			<view class="check-title">17.其他测试</view>
+			<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" deletable="{{ true }}" />
+		</view>
+		<view class="check-item">
+			<view class="check-title">18.缺陷描述</view>
+			<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" deletable="{{ true }}" />
+		</view>
+		<button bindtap="goReport" class="btn" plain="true" style="margin-top: 40rpx;background: #575DFB;color: #FFF;">
+			<view>一键生成报告</view>
+		</button>
+	</view>
+</view>

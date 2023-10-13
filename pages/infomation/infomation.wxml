@@ -1,0 +1,26 @@
+<!--login.wxml-->
+<view class="container login">
+  <view>
+		<view style="margin: 40rpx 0">
+			<view class="form-title">验货员</view>
+			<view class="input">
+				<van-field left-icon="envelop-o" placeholder="Ex: 张三"></van-field>
+			</view>
+		</view>
+		<view style="display: flex;justify-content: space-between;">
+			<button wx:if="{{active == 0}}" class="btn-small-active">B2C</button>
+			<button wx:else class="btn-small-active" style="background: #0015FF66;" bindtap="onSwitch">B2C</button>
+			<button wx:if="{{active == 1}}" class="btn-small-active">AXE</button>
+			<button wx:else class="btn-small-active" style="background: #0015FF66;" bindtap="onSwitch">AXE</button>
+		</view>
+		<view style="margin: 40rpx 0 10rpx 0">
+			<view class="form-title">订单号</view>
+			<view class="input">
+				<van-field left-icon="lock" placeholder="Ex: 12465789123456798"></van-field>
+			</view>
+		</view>
+		<button bindtap="gotoCheck" class="btn" plain="true" style="margin-top: 40rpx;background: #575DFB;color: #FFF;">
+			<view>Check</view>
+		</button>
+	</view>
+</view>

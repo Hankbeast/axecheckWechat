@@ -3,10 +3,23 @@
   <view>
 		<view class="welcome">Login</view>
 		<view>Login now to track all your expenses and income at a place!</view>
-		<button bindtap="Login" class="btn" plain="true" style="margin-top: 20rpx;background: #575DFB;color: #FFF;">
+		<view style="margin: 40rpx 0">
+			<view class="form-title">Email</view>
+			<view class="input">
+				<van-field left-icon="envelop-o" placeholder="Ex: abc@example.com"></van-field>
+			</view>
+		</view>
+		<view style="margin: 40rpx 0 10rpx 0">
+			<view class="form-title">Your Password</view>
+			<view class="input">
+				<van-field left-icon="lock" type="password"></van-field>
+			</view>
+		</view>
+		<view class="logintext" style="margin-bottom: 60rpx;">Forgot Password?</view>
+		<button bindtap="logintomain" class="btn" plain="true" style="background: #575DFB;color: #FFF;">
 			<view>Login</view>
 		</button>
-		<button class="btn" plain="true" style="margin-top: 60rpx;">
+		<button class="btn" plain="true" style="margin-top: 40rpx;">
 			<van-image width="20" height="20" style="margin-top: 20rpx;" src="/public/wechat.svg" />
 			<view>continue with Wechat</view>
 		</button>

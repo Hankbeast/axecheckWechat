@@ -1,0 +1,14 @@
+.btn-small {
+	background: #0015FF66;
+}
+.btn-small-active {
+	height: 80rpx;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 700;
+	border-radius: 12px;
+	background: #575DFB;
+	color: #FFF;
+	width: 270rpx;
+	padding-top: 8rpx;
+}
