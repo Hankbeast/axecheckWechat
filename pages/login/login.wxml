@@ -15,11 +15,11 @@
 				<van-field left-icon="lock" type="password"></van-field>
 			</view>
 		</view>
-		<view class="logintext" style="margin-bottom: 60rpx;">Forgot Password?</view>
+		<view bindtap="forgotPwd" class="logintext" style="margin-bottom: 60rpx;">Forgot Password?</view>
 		<button bindtap="logintomain" class="btn" plain="true" style="background: #575DFB;color: #FFF;">
 			<view>Login</view>
 		</button>
-		<button class="btn" plain="true" style="margin-top: 40rpx;">
+		<button bind:tap="wechatLogin" class="btn" plain="true" style="margin-top: 40rpx;">
 			<van-image width="20" height="20" style="margin-top: 20rpx;" src="/public/wechat.svg" />
 			<view>continue with Wechat</view>
 		</button>

@@ -3,7 +3,7 @@
   <view>
 		<view class="welcome">Welcome</view>
 		<view>Axe Inspection</view>
-		<button class="btn" plain="true" style="margin-top: 60rpx;">
+		<button bindtap="wechatLogin" class="btn" plain="true" style="margin-top: 60rpx;">
 			<van-image width="20" height="20" style="margin-top: 20rpx;" src="/public/wechat.svg" />
 			<view>continue with Wechat</view>
 		</button>

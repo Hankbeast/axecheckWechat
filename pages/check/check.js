@@ -3,6 +3,9 @@ Page({
   data: {
 		step: 1,
 		fileList: [],
+		// 
+		facInfo: [],
+		bsciInfo: []
   },
   onLoad() {
 
@@ -12,11 +15,35 @@ Page({
 			step: 2
 		})
 	},
-	afterRead(event) {
-		console.log(event);
+	facInfoRead(event) {
 		const {file} = event.detail;
+		this.setData({
+			facInfo: [{
+				url: file.url,
+				name: 'facInfo'
+			}]
+		})
+	},
+	bsciInfoRead(event) {
+		const {file} = event.detail;
+		this.setData({
+			bsciInfo: [{
+				url: file.url,
+				name: 'facInfo'
+			}]
+		})
+	},
+	picDel(item) {
+		this.setData({
+			facInfo: []
+		})
+	},
+	bsciInfoDel() {
+		this.setData({
+			bsciInfo: []
+		})
 	},
 	goReport() {
 		
-	}
+	},
 })

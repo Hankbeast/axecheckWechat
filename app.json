@@ -5,6 +5,7 @@
 		"pages/login/login",
 		"pages/infomation/infomation",
 		"pages/check/check",
+		"pages/forgotPwd/forgotPwd",
 		"pages/index/index"
 	],
 	"usingComponents": {

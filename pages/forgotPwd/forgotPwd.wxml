@@ -1,0 +1,40 @@
+<!--pages/forgotPwd/forgotPwd.wxml-->
+<view wx:if="{{step == 1}}" class="container register">
+	<view class="welcome">Forgot Password?</view>
+	<view>Recover you password if you have forgot the password!</view>
+	<view style="margin: 40rpx 0">
+		<view class="form-title">Email</view>
+		<view class="input">
+			<van-field left-icon="envelop-o" placeholder="EX: 123456"></van-field>
+		</view>
+	</view>
+	<button bindtap="goStep2" class="btn" plain="true" style="margin-top: 20rpx;background: #575DFB;color: #FFF;">
+		<view>Submit</view>
+	</button>
+</view>
+<view wx:if="{{step == 2}}" class="container register">
+	<view class="welcome">Forgot Password?</view>
+	<view>We have sent an email to your email account with a verification code!</view>
+	<view style="margin: 40rpx 0">
+		<view class="form-title">Verification Code</view>
+		<view class="input">
+			<van-field left-icon="envelop-o" placeholder="EX: 123456"></van-field>
+		</view>
+	</view>
+	<button bindtap="goStep3" class="btn" plain="true" style="margin-top: 20rpx;background: #575DFB;color: #FFF;">
+		<view>Submit</view>
+	</button>
+</view>
+<view wx:if="{{step == 3}}" class="container register">
+	<view class="welcome">Forgot Password?</view>
+	<view>Set your new password to login into your account!</view>
+	<view style="margin: 40rpx 0">
+		<view class="form-title">Enter New Password</view>
+		<view class="input">
+			<van-field left-icon="lock" type="password"></van-field>
+		</view>
+	</view>
+	<button bindtap="confirm" class="btn" plain="true" style="margin-top: 20rpx;background: #575DFB;color: #FFF;">
+		<view>Confirm</view>
+	</button>
+</view>

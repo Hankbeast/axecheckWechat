@@ -23,7 +23,7 @@
 			</view>
 		</view>
 		<button bindtap="goNext" class="btn" plain="true" style="margin-top: 20rpx;background: #575DFB;color: #FFF;">
-			<view>Register</view>
+			<view>Next</view>
 		</button>
 		<view style="text-align: center;margin-top: 45rpx;">
 			<block> Already have an account? </block>
