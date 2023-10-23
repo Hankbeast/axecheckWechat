@@ -27,7 +27,8 @@ Page({
 	},
 	logintomain() {
 		wx.navigateTo({
-			url: '../infomation/infomation',
+			// url: '../infomation/infomation',
+			url: '../checklist/checklist',
 		})
 	},
 	wechatLogin() {

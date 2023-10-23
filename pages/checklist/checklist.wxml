@@ -1,0 +1,15 @@
+<!--pages/checklist/checklist.wxml-->
+<view class="container">
+	<van-cell value="详情" is-link bindtap="goInfo">
+		<view slot="title">
+			<view class="van-cell-text">{Product Name}</view>
+			<van-tag type="warning">检测中</van-tag>
+		</view>
+	</van-cell>
+	<van-cell value="详情" is-link bindtap="goInfo">
+		<view slot="title">
+			<view class="van-cell-text">{Product Name}</view>
+			<van-tag type="success">已完成</van-tag>
+		</view>
+	</van-cell>
+</view>

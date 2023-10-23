@@ -6,6 +6,7 @@
 		"pages/infomation/infomation",
 		"pages/check/check",
 		"pages/forgotPwd/forgotPwd",
+		"pages/checklist/checklist",
 		"pages/index/index"
 	],
 	"usingComponents": {
@@ -13,7 +14,8 @@
 		"van-field": "@vant/weapp/field/index",
 		"van-cell": "@vant/weapp/cell/index",
 		"van-cell-group": "@vant/weapp/cell-group/index",
-		"van-uploader": "@vant/weapp/uploader/index"
+		"van-uploader": "@vant/weapp/uploader/index",
+		"van-tag": "@vant/weapp/tag/index"
 	},
   "window":{
     "backgroundTextStyle":"light",

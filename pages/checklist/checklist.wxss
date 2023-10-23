@@ -1,0 +1,4 @@
+/* pages/checklist/checklist.wxss */
+.login {
+	padding-top: 10%;
+}
