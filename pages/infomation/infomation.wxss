@@ -10,5 +10,5 @@
 	background: #575DFB;
 	color: #FFF;
 	width: 270rpx;
-	padding-top: 8rpx;
+	/* padding-top: 8rpx; */
 }
